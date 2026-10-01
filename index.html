@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EPLAN | Site institucional</title>
+  <meta name="description" content="EPLAN: excelência que transforma projetos em resultados. Conheça a empresa e entre em contato.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="EPLAN - Início">
+        <img src="assets/img/logo/logo.png" alt="EPLAN">
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="menu" aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="section hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <span class="label">EPLAN</span>
+          <h1>Excelência que transforma projetos em resultados.</h1>
+          <p>[Texto temporário de apresentação. Substituir pelo texto institucional da EPLAN.]</p>
+          <div class="hero__buttons">
+            <a href="#sobre" class="btn btn--primary">Conheça a empresa</a>
+            <a href="#contato" class="btn btn--outline">Entre em contato</a>
+          </div>
+        </div>
+        <div class="hero__image">
+          <img src="assets/img/empresa/hero.jpg" alt="Imagem principal da EPLAN" width="800" height="600">
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section section--light">
+      <div class="container about__grid">
+        <div class="about__image">
+          <img src="assets/img/empresa/sobre.jpg" alt="Equipe da EPLAN" width="800" height="600" loading="lazy">
+        </div>
+        <div class="about__text">
+          <span class="label">Sobre nós</span>
+          <h2>[Título temporário sobre a empresa]</h2>
+          <p>[Primeiro parágrafo temporário. Substituir pela história e apresentação da EPLAN.]</p>
+          <p>[Segundo parágrafo temporário. Substituir pela missão, visão ou atuação da empresa.]</p>
+          <div class="features">
+            <article class="feature">
+              <span class="feature__number">01</span>
+              <h3>Experiência</h3>
+              <p>[Texto temporário]</p>
+            </article>
+            <article class="feature">
+              <span class="feature__number">02</span>
+              <h3>Qualidade</h3>
+              <p>[Texto temporário]</p>
+            </article>
+            <article class="feature">
+              <span class="feature__number">03</span>
+              <h3>Segurança</h3>
+              <p>[Texto temporário]</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clientes" class="section">
+      <div class="container">
+        <div class="section__head">
+          <span class="label">Clientes</span>
+          <h2>Empresas que confiam na EPLAN</h2>
+          <p>[Texto curto temporário sobre a relação da EPLAN com seus clientes.]</p>
+        </div>
+        <div class="clients__grid">
+          <div class="client"><img src="assets/img/clientes/cliente-01.png" alt="Logo do cliente 01" loading="lazy"></div>
+          <div class="client"><img src="assets/img/clientes/cliente-02.png" alt="Logo do cliente 02" loading="lazy"></div>
+          <div class="client"><img src="assets/img/clientes/cliente-03.png" alt="Logo do cliente 03" loading="lazy"></div>
+          <div class="client"><img src="assets/img/clientes/cliente-04.png" alt="Logo do cliente 04" loading="lazy"></div>
+          <div class="client"><img src="assets/img/clientes/cliente-05.png" alt="Logo do cliente 05" loading="lazy"></div>
+          <div class="client"><img src="assets/img/clientes/cliente-06.png" alt="Logo do cliente 06" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section section--dark">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <span class="label label--light">Contato</span>
+          <h2>Vamos conversar?</h2>
+          <p>[Texto curto temporário convidando o visitante a entrar em contato.]</p>
+          <ul class="contact__list">
+            <li><strong>E-mail:</strong> [e-mail da EPLAN]</li>
+            <li><strong>Telefone:</strong> [telefone da EPLAN]</li>
+            <li><strong>WhatsApp:</strong> [WhatsApp da EPLAN]</li>
+          </ul>
+        </div>
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required>
+          </div>
+          <div class="form__group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form__group">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel">
+          </div>
+          <div class="form__group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Enviar mensagem</button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img src="assets/img/logo/logo.png" alt="EPLAN" loading="lazy">
+          <p>[Descrição curta temporária da EPLAN.]</p>
+        </div>
+        <nav class="footer__nav" aria-label="Links do rodapé">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#clientes">Clientes</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; <span id="year">2026</span> EPLAN. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Vitor Daniel</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
