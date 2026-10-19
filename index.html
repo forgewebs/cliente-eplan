@@ -309,7 +309,12 @@
           </ul>
         </div>
 
-        <form class="form" id="contactForm" novalidate>
+        <form class="form" id="contactForm"
+      action="https://api.web3forms.com/submit"
+      method="POST">
+
+  <input type="hidden" name="access_key"
+         value="38bc2968-db20-49a3-b60b-e19b07b8f8a3">
           <div class="form__group">
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome"
