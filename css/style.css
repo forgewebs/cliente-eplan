@@ -1107,3 +1107,145 @@ h3 {
     padding: 22px 20px;
   }
 }
+
+.client.service {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.client.service:hover {
+  transform: translateY(-5px);
+  border-color: #174a7e;
+  box-shadow: 0 8px 22px rgba(0, 35, 75, 0.08);
+}
+
+.client.service {
+  overflow: hidden;
+}
+
+.client.service .service-image {
+  display: block;
+  width: 100%;
+  height: 140px;
+  max-height: none;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  margin: 0 auto 16px;
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 9999;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #25D366;
+  color: #ffffff;
+
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
+
+  animation: whatsapp-entrance 0.5s ease-out;
+}
+
+.whatsapp-icon {
+  width: 34px;
+  height: 34px;
+  fill: currentColor;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.22);
+}
+
+.whatsapp-float:focus-visible {
+  outline: 3px solid #174a7e;
+  outline-offset: 4px;
+}
+
+.whatsapp-tooltip {
+  position: absolute;
+  right: 72px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  padding: 9px 13px;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #173653;
+  border: 1px solid #e0e5eb;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+
+  font-size: 13px;
+  white-space: nowrap;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.whatsapp-float:hover .whatsapp-tooltip,
+.whatsapp-float:focus-visible .whatsapp-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+@keyframes whatsapp-entrance {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ajustes para celulares */
+@media (max-width: 600px) {
+  .whatsapp-float {
+    width: 54px;
+    height: 54px;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .whatsapp-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .whatsapp-tooltip {
+    display: none;
+  }
+}
+
+/* Respeita usuários que preferem menos animações */
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float {
+    animation: none;
+    transition: none;
+  }
+}
