@@ -1,401 +1,148 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EPLAN | Soluções em Obras e Montagem Industrial</title>
-  <meta name="description"
-    content="A EPLAN oferece soluções em caldeiraria, montagem industrial, construção civil, obras de artes especiais e segurança do trabalho.">
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recurso Pendente de Pagamento</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f1724;
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px;
+      text-align: center;
+      padding: 40px 24px;
+    }
+
+    .icon {
+      font-size: 64px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(30px, 6vw, 46px);
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+
+    h1 span {
+      color: #22c55e;
+    }
+
+    .description {
+      color: #a6b4c8;
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+
+    .contact-text {
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 26px;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      background: #22c55e;
+      color: #07130b;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 17px 26px;
+      border-radius: 10px;
+      transition: 0.2s;
+    }
+
+    .whatsapp:hover {
+      background: #16a34a;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 55px;
+      padding-top: 24px;
+      border-top: 1px solid #293548;
+      color: #8fa1b8;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    footer strong {
+      color: #dbe5f1;
+      font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 24px 8px;
+      }
+
+      .description,
+      .contact-text {
+        font-size: 15px;
+      }
+
+      .whatsapp {
+        display: block;
+        padding: 16px 12px;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <main class="container">
 
-  <header class="header">
-    <div class="container header__inner">
-      <a href="#inicio" class="logo" aria-label="EPLAN - Início">
-        <img src="assets/img/logo/logo.png" alt="EPLAN">
-      </a>
+    <div class="icon">🔒</div>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
-        <span></span><span></span><span></span>
-      </button>
+    <h1>
+      Recurso Pendente<br>
+      de <span>Pagamento</span>
+    </h1>
 
-      <nav class="nav" id="menu" aria-label="Menu principal">
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre Nós</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#seguranca">Segurança do Trabalho</a>
-        <a href="#clientes">Clientes</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </div>
-  </header>
+    <p class="description">
+      Este recurso está disponível, mas ainda não foi
+      liberado devido à pendência de pagamento.
+    </p>
 
-  <main>
+    <p class="contact-text">
+      <strong>Entre em contato com o desenvolvedor</strong><br>
+      para mais informações e liberação do acesso.
+    </p>
 
-    <!-- INÍCIO -->
-    <section id="inicio" class="section hero">
-      <div class="container hero__grid">
-        <div class="hero__text">
-          <span class="label">EPLAN | Soluções em Obras</span>
+    <!-- SUBSTITUA PELO SEU NUMERO -->
+    <a
+      class="whatsapp"
+      href="https://wa.me/5562981157886?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20libera%C3%A7%C3%A3o%20do%20acesso."
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Falar com o desenvolvedor (WhatsApp)
+    </a>
 
-          <h1>Segurança em primeiro lugar. Qualidade em cada projeto.</h1>
-
-          <p>
-            Soluções em obras industriais, caldeiraria, montagem industrial,
-            construção civil e obras de artes especiais, com compromisso com
-            a qualidade, a segurança e a satisfação dos nossos clientes.
-          </p>
-
-          <div class="hero__buttons">
-            <a href="#sobre" class="btn btn--primary">Conheça a empresa</a>
-            <a href="#contato" class="btn btn--outline">Solicite um orçamento</a>
-          </div>
-        </div>
-
-        <div class="hero__image">
-          <img src="assets/img/empresa/hero.jpg" alt="Atuação da EPLAN em obras e projetos industriais" width="800"
-            height="600">
-        </div>
-      </div>
-    </section>
-
-    <!-- SOBRE A EMPRESA -->
-    <section id="sobre" class="section section--light">
-      <div class="container about__grid">
-
-        <div class="about__image">
-          <img src="assets/img/empresa/sobre.jpg" alt="Atuação da equipe EPLAN" width="800" height="600" loading="lazy">
-        </div>
-
-        <div class="about__text">
-          <span class="label">Sobre nós</span>
-
-          <h2>Soluções completas para obras e projetos industriais</h2>
-
-          <p>
-            A EPLAN atua na execução de obras industriais, oferecendo soluções
-            nas áreas de caldeiraria, montagem industrial, construção civil e
-            construção de obras de artes especiais.
-          </p>
-
-          <p>
-            Com tradição, empenho e dedicação, buscamos oferecer serviços de
-            qualidade e um atendimento comprometido com as necessidades de
-            cada cliente. Nosso trabalho é orientado pela melhoria contínua,
-            pela inovação e pela busca dos melhores resultados em cada projeto.
-          </p>
-
-          <div class="features">
-
-            <article class="feature">
-              <span class="feature__number">01</span>
-              <h3>Qualidade</h3>
-              <p>
-                Compromisso com a excelência na execução dos serviços e na
-                entrega de soluções para cada projeto.
-              </p>
-            </article>
-
-            <article class="feature">
-              <span class="feature__number">02</span>
-              <h3>Segurança</h3>
-              <p>
-                Segurança em primeiro lugar, com atenção à capacitação dos
-                colaboradores e às práticas de trabalho seguro.
-              </p>
-            </article>
-
-            <article class="feature">
-              <span class="feature__number">03</span>
-              <h3>Transparência</h3>
-              <p>
-                Atuação pautada pela transparência, pelo compromisso e pela
-                busca da satisfação dos clientes.
-              </p>
-            </article>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVIÇOS -->
-    <section id="servicos" class="section">
-      <div class="container">
-
-        <div class="section__head">
-          <span class="label">Nossas soluções</span>
-          <h2>Áreas de atuação</h2>
-          <p>
-            Conheça as soluções oferecidas pela EPLAN para obras,
-            instalações e projetos industriais.
-          </p>
-        </div>
-
-        <div class="clients__grid">
-
-          <article class="client service">
-            <img src="assets/img/empresa/calderaria1.png" alt="Serviços de caldeiraria industrial"
-              class="service-image">
-            <h3>Caldeiraria</h3>
-            <p>
-              Serviços de corte, soldagem, galvanização e fabricação e
-              montagem de estruturas pesadas.
-            </p>
-          </article>
-
-          <article class="client service">
-            <img src="assets/img/empresa/montagemind.png" alt="Serviços de Montagem industrial" class="service-image">
-            <h3>Montagem Industrial</h3>
-            <p>
-              Fabricação, montagem e manutenção de caldeiras, atuação em
-              fábricas de açúcar e destilarias, além da fabricação e montagem
-              de tanques e caixas d'água.
-            </p>
-          </article>
-
-          <article class="client service">
-            <img src="assets/img/empresa/civil.png" alt="Serviços de Montagem industrial" class="service-image">
-            <h3>Construção Civil</h3>
-            <p>
-              Construções, reformas, projetos, administração de obras e
-              cálculo de viabilidade financeira.
-            </p>
-          </article>
-
-          <article class="client service">
-            <img src="assets/img/empresa/arte.png" alt="Serviços de Montagem industrial" class="service-image">
-            <h3>Obras de Artes Especiais</h3>
-            <p>
-              Atuação em obras como pontes, viadutos, túneis, passarelas,
-              bueiros e galerias.
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- SEGURANÇA DO TRABALHO -->
-    <section id="seguranca" class="section section--light">
-      <div class="container">
-
-        <div class="section__head">
-          <span class="label">Segurança em primeiro lugar</span>
-          <h2>Segurança do Trabalho</h2>
-
-          <p>
-            O Grupo EPLAN mantém uma equipe de colaboradores habilitados e
-            estrutura para treinamentos e integração de novos colaboradores,
-            além de capacitação e reciclagem profissional.
-          </p>
-        </div>
-
-        <div class="clients__grid">
-
-          <article class="client service">
-            <h3>Equipamentos e Instalações</h3>
-            <p>
-              NR 6 — Equipamentos de Proteção Individual (EPI).<br>
-              NR 10 — Segurança em Instalações Elétricas.<br>
-              NR 12 — Segurança em Máquinas e Equipamentos.
-            </p>
-          </article>
-
-          <article class="client service">
-            <h3>Operações e Equipamentos</h3>
-            <p>
-              Capacitação para uso de lixadeiras e esmerilhadeiras,
-              operação de plataformas elevatórias e procedimentos de
-              bloqueio e etiquetagem.
-            </p>
-          </article>
-
-          <article class="client service">
-            <h3>Trabalhos Especiais</h3>
-            <p>
-              NR 18 — Operações de Soldagem e Corte a Quente.<br>
-              NR 33 — Trabalho em Espaço Confinado.<br>
-              NR 35 — Trabalho em Altura.
-            </p>
-          </article>
-
-          <article class="client service">
-            <h3>Inflamáveis e Combustíveis</h3>
-            <p>
-              NR 20 — Segurança e Saúde no Trabalho com Inflamáveis
-              e Combustíveis.
-            </p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CLIENTES -->
-    <section id="clientes" class="section">
-      <div class="container">
-
-        <div class="section__head">
-          <span class="label">Parcerias</span>
-          <h2>Compromisso com cada cliente</h2>
-
-          <p>
-            Trabalhamos para oferecer atendimento de qualidade, soluções
-            adequadas a cada projeto e compromisso com a satisfação de
-            todos os envolvidos.
-          </p>
-        </div>
-
-        <div class="clients__grid">
-          <div class="client">
-            <img src="assets/img/clientes/cliente-01.png" alt="Logo do cliente 01" loading="lazy">
-          </div>
-          <div class="client">
-            <img src="assets/img/clientes/cliente-02.png" alt="Logo do cliente 02" loading="lazy">
-          </div>
-          <div class="client">
-            <img src="assets/img/clientes/cliente-03.png" alt="Logo do cliente 03" loading="lazy">
-          </div>
-          <div class="client">
-            <img src="assets/img/clientes/cliente-04.png" alt="Logo do cliente 04" loading="lazy">
-          </div>
-          <div class="client">
-            <img src="assets/img/clientes/cliente-05.png" alt="Logo do cliente 05" loading="lazy">
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- CONTATO -->
-    <section id="contato" class="section section--dark">
-      <div class="container contact__grid">
-
-        <div class="contact__info">
-          <span class="label label--light">Entre em contato</span>
-          <h2>Solicite seu orçamento</h2>
-
-          <p>
-            Precisa de soluções para sua obra ou projeto industrial?
-            Entre em contato com a EPLAN. Nossa equipe está disponível
-            para receber sua solicitação e conversar sobre suas necessidades.
-          </p>
-
-          <ul class="contact__list">
-            <li>
-              <strong>E-mail:</strong>
-              <a href="mailto:comercial911.eplan@gmail.com">
-                comercial911.eplan@gmail.com
-              </a>
-            </li>
-            <li>
-              <strong>Telefone:</strong>
-              <a href="tel:+5562999177246">(62) 99917-7246</a>
-            </li>
-            <li>
-              <strong>Telefone:</strong>
-              <a href="tel:+5562981158344">(62) 98115-8344</a>
-            </li>
-            <li>
-              <strong>Telefone:</strong>
-              <a href="tel:+5593988128081">(93) 98812-8081</a>
-            </li>
-            <li>
-              <strong>Endereço:</strong>
-              Avenida Pará, nº 941, Centro, Minaçu - GO.
-            </li>
-          </ul>
-        </div>
-
-        <form class="form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-
-          <input type="hidden" name="access_key" value="38bc2968-db20-49a3-b60b-e19b07b8f8a3">
-          <div class="form__group">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" autocomplete="name" required>
-          </div>
-
-          <div class="form__group">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" autocomplete="email" required>
-          </div>
-
-          <div class="form__group">
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" name="telefone" autocomplete="tel">
-          </div>
-
-          <div class="form__group">
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn--primary">
-            Enviar mensagem
-          </button>
-
-          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
-        </form>
-
-      </div>
-    </section>
+    <footer>
+      <strong>Seu projeto em boas mãos!</strong><br>
+      Desenvolvimento sob medida e suporte direto.
+    </footer>
 
   </main>
-
-  <!-- RODAPÉ -->
-  <footer class="footer">
-    <div class="container">
-
-      <div class="footer__top">
-
-        <div class="footer__brand">
-          <img src="assets/img/logo/logo2.png" alt="EPLAN" loading="lazy">
-
-          <p>
-            Soluções em caldeiraria, montagem industrial, construção civil,
-            obras de artes especiais e segurança do trabalho.
-          </p>
-        </div>
-
-        <nav class="footer__nav" aria-label="Links do rodapé">
-          <a href="#inicio">Início</a>
-          <a href="#sobre">Sobre Nós</a>
-          <a href="#servicos">Serviços</a>
-          <a href="#seguranca">Segurança do Trabalho</a>
-          <a href="#clientes">Clientes</a>
-          <a href="#contato">Contato</a>
-        </nav>
-
-      </div>
-
-      <div class="footer__bottom">
-        <p>
-          &copy; <span id="year">2026</span> EPLAN.
-          Todos os direitos reservados.
-        </p>
-
-      </div>
-
-    </div>
-  </footer>
-
-  <script src="js/script.js"></script>
-
-  <!-- Botão flutuante do WhatsApp -->
-  <a href="https://wa.me/5562999177246?text=Ol%C3%A1%21%20Acessei%20o%20site%20da%20EPLAN%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
-    class="whatsapp-float" id="whatsappFloat" target="_blank" rel="noopener noreferrer"
-    aria-label="Fale com a EPLAN pelo WhatsApp" title="Fale conosco pelo WhatsApp">
-    <svg viewBox="0 0 32 32" aria-hidden="true" class="whatsapp-icon">
-      <path
-        d="M16.02 3C8.85 3 3.02 8.82 3.02 15.99c0 2.29.6 4.52 1.75 6.49L3 29l6.69-1.75a13 13 0 0 0 6.32 1.62h.01C23.19 28.87 29 23.05 29 15.88A12.91 12.91 0 0 0 16.02 3Zm0 23.7h-.01a10.8 10.8 0 0 1-5.5-1.5l-.4-.24-3.97 1.04 1.06-3.87-.26-.4a10.72 10.72 0 0 1-1.65-5.74c0-5.93 4.82-10.75 10.75-10.75a10.7 10.7 0 0 1 7.61 3.15 10.7 10.7 0 0 1 3.14 7.62c0 5.93-4.82 10.75-10.75 10.75Zm5.9-8.05c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.51-.16-.72.16-.21.32-.83 1.05-1.02 1.27-.19.21-.37.24-.69.08-.32-.16-1.36-.5-2.6-1.6-.96-.86-1.61-1.92-1.8-2.24-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.74-.99-2.38-.26-.62-.52-.53-.72-.54h-.61c-.21 0-.56.08-.85.4-.3.32-1.12 1.1-1.12 2.68s1.15 3.1 1.31 3.31c.16.21 2.26 3.45 5.48 4.84.77.33 1.37.53 1.84.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.14-.29-.22-.61-.38Z" />
-    </svg>
-    <span class="whatsapp-tooltip">Fale conosco pelo WhatsApp</span>
-  </a>
-
 </body>
-
 </html>
